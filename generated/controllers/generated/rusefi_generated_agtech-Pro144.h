@@ -58,8 +58,8 @@
 #define adc_channel_e_EFI_ADC_ERROR 50
 #define adc_channel_e_EFI_ADC_NONE 0
 #define adc_channel_e_EFI_ADC_TOTAL_CHANNELS 49
-#define adc_channel_e_enum 0="NONE",11="AV1",6="AV10",7="AV11",8="AV12",12="AV2",16="AV3",14="AV4",1="AV5",2="AV6",3="AV7",4="AV8",5="AV9",15="A_Temp1",13="A_Temp2",9="A_Temp3",10="A_Temp4"
-#define adc_channel_e_fullenum "NONE","AV5","AV6","AV7","AV8","AV9","AV10","AV11","AV12","A_Temp3","A_Temp4","AV1","AV2","A_Temp2","AV4","A_Temp1","AV3","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID"
+#define adc_channel_e_enum 0="NONE",11="AV1",6="AV10",7="AV11",12="AV2",16="AV3",14="AV4",1="AV5",2="AV6",3="AV7",4="AV8",5="AV9",15="A_Temp1",13="A_Temp2",9="A_Temp3",10="A_Temp4",8="BattVolt"
+#define adc_channel_e_fullenum "NONE","AV5","AV6","AV7","AV8","AV9","AV10","AV11","BattVolt","A_Temp3","A_Temp4","AV1","AV2","A_Temp2","AV4","A_Temp1","AV3","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID"
 #define ADC_CHANNEL_NONE 0
 #define afr_sensor_s_size 20
 #define air_pressure_sensor_config_s_size 12
@@ -1569,7 +1569,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges true
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 3027456451
+#define SIGNATURE_HASH 2679975335
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -2183,7 +2183,7 @@
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
 #define ts_show_wbo_canbus_set_type false
-#define TS_SIGNATURE "rusEFI main.2026.05.20.agtech-Pro144.3027456451"
+#define TS_SIGNATURE "rusEFI main.2026.05.20.agtech-Pro144.2679975335"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
