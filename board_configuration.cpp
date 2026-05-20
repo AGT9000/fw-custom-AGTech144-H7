@@ -38,7 +38,7 @@ static void setInjectorPins() {
 	engineConfiguration->injectionPins[2] = Gpio::G10;
 	engineConfiguration->injectionPins[3] = Gpio::G11;
 	engineConfiguration->injectionPins[4] = Gpio::G12;
-	engineConfiguration->injectionPins[0] = Gpio::G13;
+	engineConfiguration->injectionPins[5] = Gpio::G13;
 }
 
 static void setIgnitionPins() {
