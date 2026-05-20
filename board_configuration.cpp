@@ -13,6 +13,34 @@ Gpio getWarningLedPin() {
 	return Gpio::Unassigned;
 }
 
+static const brain_pin_e injPins[] = {
+    Gpio::D7,
+	Gpio::G9,
+	Gpio::G10,
+	Gpio::G11,
+	Gpio::G12,
+	Gpio::G13
+};
+
+static const brain_pin_e ignPins[] = {
+	Gpio::D4,
+	Gpio::D3,
+	Gpio::C9,
+	Gpio::C8,
+	Gpio::C7,
+	Gpio::G8
+};
+
+static void setInjectorPins() {
+	copyArray(engineConfiguration->injectionPins, injPins);
+}
+
+static void setIgnitionPins() {
+	copyArray(engineConfiguration->ignitionPins, ignPins);
+}
+
+
+
 static void setupVbatt() {
 	// 5.6k high side/10k low side = 1.56 ratio divider
 	engineConfiguration->analogInputDividerCoefficient = 1.56f;
@@ -60,6 +88,8 @@ static void customBoardDefaultConfiguration() {
     setupCAN();
 	setupVbatt();
 	setupDefaultSensorInputs();
+	setInjectorPins();
+	setIgnitionPins();
 	
     engineConfiguration->analogInputDividerCoefficient = 1.47f;
 
