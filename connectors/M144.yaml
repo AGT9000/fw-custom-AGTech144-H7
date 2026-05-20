@@ -1,61 +1,51 @@
 pins:
-  - pin: 0
-    id: D4
+  - id: D4
     class: outputs  
     ts_name: IGN1
     type: high_logic
 
-  - pin: 1
-    id: D3
+  - id: D3
     class: outputs 
     ts_name: IGN2
     type: high_logic
 
-  - pin: 2
-    id: C9
+  - id: C9
     class: outputs
     ts_name: IGN3
     type: high_logic
 
-  - pin: 4
-    id: C8
+  - id: C8
     class: outputs
     ts_name: IGN4
     type: high_logic
 
-  - pin: 5
-    id: C7
+  - id: C7
     class: outputs   
     ts_name: IGN5
     type: high_logic
 
-  - pin: 6
-    id: G8 
+  - id: G8 
     class: outputs   
     ts_name: IGN6
     type: high_logic
 
-  - pin: 7
-    id: D7
+  - id: D7
     class: outputs    
     ts_name: INJ1
     type: ls
 
-  - pin: 8
-    id: G9
+  - id: G9
     class: outputs
     ts_name: INJ2
     type: ls
 
-  - pin: 9
-    id: G10
+  - id: G10
     class: outputs
     ts_name: INJ3
     type: ls
 
   - class: outputs
     id: G11
-    pin: 10
     ts_name: INJ4
     type: ls
 
@@ -67,173 +57,146 @@ pins:
 
   - class: outputs
     id: G13
-    pin: 12
     ts_name: INJ6
     type: ls
 
   - class: switch_inputs
     id: E11
-    pin: 13
     ts_name: ISO Digital IN3
     type: din
 
   - class: switch_inputs
     id: E12
-    pin: 14
     ts_name: ISO Digital IN1
     type: din
 
   - class: switch_inputs
     id: D14
-    pin: 17
     ts_name: ISO Digital IN2
     type: din
 
   - class: event_inputs
     id: E8
-    pin: 15
     ts_name: HALL1-VR1
     type: din
 
   - class: event_inputs
     id: E7
-    pin: 16
     ts_name: HALL2-VR2
     type: din
   
   - class: event_inputs
     id: E9
-    pin: 18
     ts_name: HALL3-VR3
     type: din
 
   - class: outputs
     id: G14
-    pin: 19
     ts_name: Fuel Pump CTRL
     type: ls
     
   - class: outputs
     id: B4
-    pin: 20
     ts_name: Fan CTRL
     type: ls
 
   - class: outputs
     id: B5
-    pin: 21
     ts_name: TACH Out
     type: ls
 
   - class: outputs
     id: B6
-    pin: 22
     ts_name: Spare 1 Out
     type: ls
 
   - class: outputs
     id: B7
-    pin: 23
     ts_name: Idle 1 CTRL
     type: ls
 
   - class: outputs
     id: B8
-    pin: 24
     ts_name: Spare 2 Out
     type: ls
     
   - class: analog_inputs
     id: EFI_ADC_14
-    pin: 54
     ts_name: A_Temp1
     type: av
 
   - class: analog_inputs
     id: EFI_ADC_15
-    pin: 55
     ts_name: AV3
     type: av
 
   - class: analog_inputs
     id: EFI_ADC_8
-    pin: 56
     ts_name: A_Temp3
     type: av
 
   - class: analog_inputs
     id: EFI_ADC_9
-    pin: 57
     ts_name: A_Temp4
     type: av
 
   - class: analog_inputs
     id: EFI_ADC_10
-    pin: 58
     ts_name: AV1
     type: av
 
   - class: analog_inputs
     id: EFI_ADC_11
-    pin: 59
     ts_name: AV2
     type: av
 
   - class: analog_inputs
     id: EFI_ADC_12
-    pin: 60
     ts_name: A_Temp2
     type: av
 
   - class: analog_inputs
     id: EFI_ADC_13
-    pin: 61
     ts_name: AV4
     type: av
 
   - class: analog_inputs
     id: EFI_ADC_0
-    pin: 62
     ts_name: AV5
     type: av
 
   - class: analog_inputs
     id: EFI_ADC_1
-    pin: 63
     ts_name: AV6
     type: av
 
   - class: analog_inputs
     id: EFI_ADC_2
-    pin: 64
     ts_name: AV7
     type: av
 
   - class: analog_inputs
     id: EFI_ADC_3
-    pin: 65
     ts_name: AV8
     type: av
 
   - class: analog_inputs
     id: EFI_ADC_4
-    pin: 66
     ts_name: AV9
     type: av
 
   - class: analog_inputs
     id: EFI_ADC_5
-    pin: 67
     ts_name: AV10
     type: av
 
   - class: analog_inputs
     id: EFI_ADC_6
-    pin: 68
     ts_name: AV11
     type: av
+    
   - class: analog_inputs
     id: EFI_ADC_7
-    pin: 69
+    type: av
     ts_name: AV12
     type: av
