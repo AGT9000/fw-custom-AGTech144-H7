@@ -198,5 +198,5 @@ pins:
   - class: analog_inputs
     id: EFI_ADC_7
     type: av
-    ts_name: AV12
+    ts_name: BattVolt
     type: av
