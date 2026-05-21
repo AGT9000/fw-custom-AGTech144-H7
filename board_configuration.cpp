@@ -114,18 +114,7 @@ static void setupDefaultSensorInputs() {
 
 static void agtech_boardConfigOverrides() {
 	setupSdCard();
-	// setupVbatt();
 
-	// engineConfiguration->clt.config.bias_resistor = PROTEUS_DEFAULT_AT_PULLUP;
-	// engineConfiguration->iat.config.bias_resistor = PROTEUS_DEFAULT_AT_PULLUP;
-
-	// engineConfiguration->canTxPin = Gpio::D1;
-	// engineConfiguration->canRxPin = Gpio::D0;
-	// engineConfiguration->can2RxPin = Gpio::B12;
-	// engineConfiguration->can2TxPin = Gpio::B13;
-
-	// engineConfiguration->lps25BaroSensorScl = Gpio::B10;
-	// engineConfiguration->lps25BaroSensorSda = Gpio::B11;
 }
 
 static void spi_config() {
@@ -147,8 +136,8 @@ static void customBoardDefaultConfiguration() {
 	
     engineConfiguration->analogInputDividerCoefficient = 1.56f;
 
-	engineConfiguration->adcVcc = 3.3f;
-	// engineConfiguration->is_enabled_spi_3 = false;
+	engineConfiguration->adcVcc = 3.31f;
+	
 	
 
 }
