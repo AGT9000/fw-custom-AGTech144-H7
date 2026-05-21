@@ -108,6 +108,8 @@ static void setupDefaultSensorInputs() {
     // see also enableAemXSeries
 	// pin #28 WBO AFR "Analog Volt 10"
 	engineConfiguration->afr.hwChannel = EFI_ADC_10;
+	engineConfiguration->clt.config.bias_resistor = 2400;
+	engineConfiguration->iat.config.bias_resistor = 2400;
 }
 
 static void agtech_boardConfigOverrides() {
@@ -137,7 +139,7 @@ static void customBoardDefaultConfiguration() {
     engineConfiguration->analogInputDividerCoefficient = 1.56f;
 
 	engineConfiguration->adcVcc = 3.3f;
-	engineConfiguration->is_enabled_spi_3 = false;
+	// engineConfiguration->is_enabled_spi_3 = false;
 	
 
 }
