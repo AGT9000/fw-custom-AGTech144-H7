@@ -110,8 +110,24 @@ static void setupDefaultSensorInputs() {
 	engineConfiguration->afr.hwChannel = EFI_ADC_10;
 }
 
-static void customBoardDefaultConfiguration() {
+static void agtech_boardConfigOverrides() {
 	setupSdCard();
+	// setupVbatt();
+
+	// engineConfiguration->clt.config.bias_resistor = PROTEUS_DEFAULT_AT_PULLUP;
+	// engineConfiguration->iat.config.bias_resistor = PROTEUS_DEFAULT_AT_PULLUP;
+
+	// engineConfiguration->canTxPin = Gpio::D1;
+	// engineConfiguration->canRxPin = Gpio::D0;
+	// engineConfiguration->can2RxPin = Gpio::B12;
+	// engineConfiguration->can2TxPin = Gpio::B13;
+
+	// engineConfiguration->lps25BaroSensorScl = Gpio::B10;
+	// engineConfiguration->lps25BaroSensorSda = Gpio::B11;
+}
+
+static void customBoardDefaultConfiguration() {
+	// setupSdCard();
     setupCAN();
 	setupVbatt();
 	setupDefaultSensorInputs();
@@ -128,4 +144,5 @@ static void customBoardDefaultConfiguration() {
 
 void setup_custom_board_overrides() {
     custom_board_DefaultConfiguration = customBoardDefaultConfiguration;
+	custom_board_ConfigOverrides = agtech_boardConfigOverrides;
 }
