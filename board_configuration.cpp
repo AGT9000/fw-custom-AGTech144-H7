@@ -128,6 +128,14 @@ static void agtech_boardConfigOverrides() {
 	// engineConfiguration->lps25BaroSensorSda = Gpio::B11;
 }
 
+static void spi_config() {
+
+	engineConfiguration->is_enabled_spi_1 = true;
+	engineConfiguration->spi1sckPin = Gpio::D5;
+	engineConfiguration->spi1misoPin = Gpio::D6;
+	engineConfiguration->spi1mosiPin = Gpio::D8;	
+}
+
 static void customBoardDefaultConfiguration() {
 	// setupSdCard();
     setupCAN();
@@ -135,6 +143,7 @@ static void customBoardDefaultConfiguration() {
 	setupDefaultSensorInputs();
 	setInjectorPins();
 	setIgnitionPins();
+	spi_config();
 	
     engineConfiguration->analogInputDividerCoefficient = 1.56f;
 
