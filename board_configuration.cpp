@@ -127,12 +127,12 @@ static void spi_config() {
 
 static void customBoardDefaultConfiguration() {
 	// setupSdCard();
-    setupCAN();
+   // setupCAN();
 	setupVbatt();
 	setupDefaultSensorInputs();
-	setInjectorPins();
-	setIgnitionPins();
-	spi_config();
+	//setInjectorPins();
+	//setIgnitionPins();
+	//spi_config();
 	
     engineConfiguration->analogInputDividerCoefficient = 1.56f;
 
