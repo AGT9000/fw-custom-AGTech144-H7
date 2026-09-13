@@ -1,0 +1,188 @@
+pins:
+  - id: C9
+    class: outputs
+    ts_name: IGN1
+    type: high_logic
+  - id: C8
+    class: outputs
+    ts_name: IGN2
+    type: high_logic
+  - id: C7
+    class: outputs
+    ts_name: IGN3
+    type: high_logic
+  - id: C6
+    class: outputs
+    ts_name: IGN4
+    type: high_logic
+  - id: D15
+    class: outputs
+    ts_name: IGN5
+    type: high_logic
+  - id: D14
+    class: outputs
+    ts_name: IGN6
+    type: high_logic
+  - id: D13
+    class: outputs
+    ts_name: IGN7
+    type: high_logic
+  - id: D12
+    class: outputs
+    ts_name: IGN8
+    type: high_logic
+  - id: D6
+    class: outputs
+    ts_name: INJ1
+    type: ls
+  - id: D5
+    class: outputs
+    ts_name: INJ2
+    type: ls
+  - id: A15
+    class: outputs
+    ts_name: INJ3
+    type: ls
+  - id: D3
+    class: outputs
+    ts_name: INJ4
+    type: ls
+  - id: A11
+    class: outputs
+    ts_name: INJ5
+    type: ls
+  - id: A10
+    class: outputs
+    ts_name: INJ6
+    type: ls
+  - id: A9
+    class: outputs
+    ts_name: INJ7
+    type: ls
+  - id: A8
+    class: outputs
+    ts_name: INJ8
+    type: ls
+  - class: switch_inputs
+    id: E11
+    ts_name: ISO Digital IN1
+    type: din
+  - class: switch_inputs
+    id: E12
+    ts_name: ISO Digital IN2
+    type: din
+  - class: switch_inputs
+    id: E13
+    ts_name: ISO Digital IN3
+    type: din
+  - class: switch_inputs
+    id: E14
+    ts_name: ISO Digital IN4
+  - class: event_inputs
+    id: E8
+    ts_name: HALL1-VR1
+    type: din
+  - class: event_inputs
+    id: E7
+    ts_name: HALL2-VR2
+    type: din
+  - class: event_inputs
+    id: E9
+    ts_name: HALL3-VR3
+    type: din
+  - class: outputs
+    id: E0
+    ts_name: Fuel Pump CTRL
+    type: ls
+  - class: outputs
+    id: E1
+    ts_name: Fan CTRL
+    type: ls
+  - class: outputs
+    id: B8
+    ts_name: TACH Out
+    type: ls
+  - class: outputs
+    id: B6
+    ts_name: Idle 2 CTRL
+    type: ls
+  - class: outputs
+    id: B9
+    ts_name: Idle 1 CTRL
+    type: ls
+  - class: outputs
+    id: B7
+    ts_name: Spare 1 Out
+    type: ls
+  - class: outputs
+    id: B4
+    ts_name: Spare 2 Out
+    type: ls
+  - class: outputs
+    id: B5
+    ts_name: Spare 2 Out
+    type: ls
+  - class: analog_inputs
+    id: EFI_ADC_14
+    ts_name: A_Temp1
+    type: av
+  - class: analog_inputs
+    id: EFI_ADC_15
+    ts_name: AV3
+    type: av
+  - class: analog_inputs
+    id: EFI_ADC_8
+    ts_name: A_Temp3
+    type: av
+  - class: analog_inputs
+    id: EFI_ADC_9
+    ts_name: A_Temp4
+    type: av
+  - class: analog_inputs
+    id: EFI_ADC_10
+    ts_name: AV1
+    type: av
+  - class: analog_inputs
+    id: EFI_ADC_11
+    ts_name: AV2
+    type: av
+  - class: analog_inputs
+    id: EFI_ADC_12
+    ts_name: A_Temp2
+    type: av
+  - class: analog_inputs
+    id: EFI_ADC_13
+    ts_name: AV4
+    type: av
+  - class: analog_inputs
+    id: EFI_ADC_0
+    ts_name: AV5
+    type: av
+  - class: analog_inputs
+    id: EFI_ADC_1
+    ts_name: AV6
+    type: av
+  - class: analog_inputs
+    id: EFI_ADC_2
+    ts_name: AV7
+    type: av
+  - class: analog_inputs
+    id: EFI_ADC_3
+    ts_name: AV8
+    type: av
+  - class: analog_inputs
+    id: EFI_ADC_4
+    ts_name: AV9
+    type: av
+  - class: analog_inputs
+    id: EFI_ADC_5
+    ts_name: AV10
+    type: av
+  - class: analog_inputs
+    id: EFI_ADC_6
+    ts_name: AV11
+    type: av
+  - class: analog_inputs
+    id: EFI_ADC_7
+    ts_name: BattVolt
+    type: av
